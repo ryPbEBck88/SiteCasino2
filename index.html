@@ -1,10 +1,24 @@
-<html lang="en">
+<!DOCTYPE html> <!-- Указывает, что это документ HTML5 -->
+<html lang="ru"> <!-- Открывает HTML-документ и задает язык страницы как английский -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8"> <!-- Устанавливает кодировку документа в UTF-8 для корректного отображения символов -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Настройки для адаптивного дизайна, чтобы страница корректно отображалась на мобильных устройствах -->
+    <link rel="stylesheet" href="style.css" type="text/css"> <!-- Подключает внешний CSS-файл для стилизации страницы -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Предварительное соединение с Google Fonts для ускорения загрузки шрифтов -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Предварительное соединение с Google Fonts (графика) с кросс-доменным доступом -->
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3&display=swap" rel="stylesheet"> <!-- Подключает шрифт Source Sans 3 из Google Fonts -->
     <title>Casino: Edication portal</title>
 </head>
 <body>
-    <h1>Casino</h1>
+    <div class="main">
+        <h1>Casino</h1>
+        <p>На картинки ниже, можно(и нужно) нажать</p>
+        <a href="cards.html">
+            <img src="img/cards.jpg" alt="Карты">
+        </a>
+        <a href="roulette.html">
+            <img src="img/roulette.jpg" style="width: 360px; height: 780px;" alt="Рулетка">
+        </a>
+    </div>
 </body>
 </html>
