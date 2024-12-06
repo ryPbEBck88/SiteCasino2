@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Квадратная матрица 3x3 с фишками</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #0000FF; /* Синий фон */
+        }
+        .matrix {
+            display: grid;
+            grid-template-columns: repeat(3, 100px);
+            grid-template-rows: repeat(3, 100px);
+            gap: 5px;
+            position: relative;
+        }
+        .square {
+            width: 100px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 48px; /* Увеличенный размер шрифта */
+            border: 2px solid #333; /* Черная рамка */
+            position: relative; /* Для позиционирования круга и фишек */
+        }
+        .red { color: #FF0000; } /* Красный цвет для чисел */
+        .black { color: #000000; } /* Черный цвет для чисел */
+ 
+        .chip {
+            width: 40px; /* Ширина круга */
+            height: 40px; /* Высота круга */
+            border-radius: 50%; /* Делает элемент круглым */
+            background-color: rgba(255, 255, 255, 0.7); /* Полупрозрачный белый фон */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute; /* Позволяет позиционировать круг */
+            font-size: 20px; /* Размер шрифта внутри круга */
+            color: #000; /* Черный цвет текста внутри круга */
+            border: 2px solid #333; /* Черная рамка круга */
+            top: 30px; /* Позиция по вертикали */
+            left: 30px; /* Позиция по горизонтали */
+        }
+        /* Позиции фишек между числами */
+        .chip01 { top: 000px; left: 083px; }
+        .chip02 { top: 000px; left: 135px; }
+        .chip03 { top: 000px; left: 189px; }
+        .chip04 { top: 083px; left: 083px; }
+        .chip05 { top: 083px; left: 135px; }
+        .chip06 { top: 083px; left: 189px; }
+        .chip07 { top: 138px; left: 083px; }
+        .chip08 { top: 138px; left: 135px; }
+        .chip09 { top: 138px; left: 189px; }
+        .chip10 { top: 189px; left: 083px; }
+        .chip11 { top: 189px; left: 135px; }
+        .chip12 { top: 189px; left: 189px; }
+    </style>
+</head>
+<body>
+
+<div class="matrix">
+    <div class="square red">3</div>
+    <div class="square black">6</div>
+    <div class="square red">9</div>
+    <div class="square black">2</div>
+    <div class="square red">5</div>
+    <div class="square black">8</div>
+    <div class="square red">1</div>
+    <div class="square black">4</div>
+    <div class="square red">7</div>
+    
+    <!-- Добавление фишек -->
+    <div class="chip chip01">1</div>
+    <div class="chip chip02">2</div>
+    <div class="chip chip03">3</div>
+    <div class="chip chip04">4</div>
+    <div class="chip chip05">5</div>
+    <div class="chip chip06">6</div>
+    <div class="chip chip07">7</div>
+    <div class="chip chip08">8</div>
+    <div class="chip chip09">9</div>
+    <div class="chip chip10">10</div>
+    <div class="chip chip11">11</div>
+    <div class="chip chip12">12</div>
+</div>
+
+</body>
+</html>
